@@ -1,5 +1,6 @@
 AiitFbAdmissions::Application.routes.draw do
   resource :index, :controller => "index"
+  root :to => 'index#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
