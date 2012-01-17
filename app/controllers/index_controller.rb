@@ -10,4 +10,8 @@ class IndexController < ApplicationController
   def show
     puts '=' * 8 + ' GET /index'
   end
+
+  def create
+    puts '=' * 8 + ' POST /index'
+  end
 end
