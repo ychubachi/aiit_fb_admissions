@@ -13,7 +13,8 @@ module SignedRequest
   # exception is thrown if it is not. A hash with the data from the
   # request is returned.
   def parse_signed_request(params, app_secret_key)
-    raise Exception.new("No signed request parameter!") unless params['signed_request']
+    return nil unless params['signed_request']
+    
     # signed_request is a . delimited string, first part is the signature
     # base64 encoded, second part is the JSON object base64 encoded
     parts = params['signed_request'].split(".")
