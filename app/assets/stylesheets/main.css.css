@@ -1,10 +1,14 @@
 @charset "UTF-8";
 body {
   margin: 0;
-  font-size: 90%;
+  font-size: 80%;
   font-family: "Calibri", "Meiryo", "Arial", "Verdana", "Geneva", "Helvetica", "sans-serif", "MS UI Gothic", "ＭＳ Ｐゴシック";
-  text-align: left;
-  line-height: 22px; }
+  text-align: left; }
+  body p {
+    padding: 5px 0px;
+    margin: 5px; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-weight: normal; }
   body h1 {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -15,6 +19,8 @@ body {
     margin-bottom: 10px;
     font-size: 100%;
     text-align: center; }
+  body a {
+    text-decoration: none; }
   body dd {
     margin-bottom: 10px; }
   body dd {
@@ -40,4 +46,4 @@ body {
   body .clear {
     clear: both; }
   body .small {
-    font-size: 80%; }
+    font-size: 90%; }
