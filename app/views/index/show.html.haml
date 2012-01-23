@@ -6,34 +6,37 @@
     });
   #accordion
     %h3
-      %a{:href => "#"} AIIT受験のまとめ
+      %a{:href => "#"} AIIT入学試験の概要
     %div
       %p
-        このページでは、出願書類の準備から受験までの流れを簡単にご説明致します。以下の項目を順番にクリックしてください。
+        このページでは、出願書類の準備から受験までの流れを簡単にご説明致します。
       %p
-        %em ※万が一、このページの情報が正式の募集要項の内容と異なる場合、募集要項にある記述が優先されます。
-      %hr
-      %p
-        AIITのカリキュラムや教員紹介などの情報は
-        %a{href: 'http://aiit.ac.jp/', target: '_blank'} 公式Webページ
-        からご覧頂けます。
-      %p
-        %a{href: 'http://www.facebook.com/aiit.ac.jp', target: '_blank'} Facebookページ
-        に「いいね！」をして頂くと、本学からの様々な情報が配信されます。
-    %h3
-      %a{:href => "#"} 入試日程
-    %div
-      %p
-        平成24（2012）年4月入学者を対象として情報アーキテクチャ専攻、創造技術専攻ともに次の日程で入学試験を実施します。
+        情報アーキテクチャ専攻、創造技術専攻ともに、平成24（2012）年4月入学者を対象として次の日程で入学試験を実施します。
         %dl
           %dt 第2期一般入試
           %dd 締切 平成24年2月6日、試験日 2月18・19日（土日）
           %dt 第3期一般入試
           %dd 締切 平成24年2月27日、 試験日 3月10・11日（土日）
-        どちらも試験の内容は一緒です。
+      %p.small
+        %em ※ 例年、第3期の入試は倍率が高くなる傾向にありますので、第2期の受験をおすすめします。
+      %p.small
+        %em ※万が一、このページの情報が正式の募集要項の内容と異なる場合、募集要項にある記述が優先されます。
+    %h3
+      %a{:href => "#"} 試験の内容
+    %div
       %p
-        %em
-          例年、第3期の入試は倍率が高くなる傾向にありますので、第2期の受験をおすすめします。
+        試験の内容は第1期、第2期ともに共通です。各専攻の専攻方法は次の通りです。
+        %dl
+          %dt
+            情報アーキテクチャ専攻
+          %dd IT基礎知識、小論文（1000文字程度）、面接・口頭試問
+          %dd
+            %a{href: 'http://aiit.ac.jp/point/pdf/201204-2-1.pdf', target: '_blank'} 第2期一般入試募集要項
+          %dt
+            創造技術専攻
+          %dd 小論文（1000文字程度）又はデッサン、面接・口頭試問
+          %dd
+            %a{href: 'http://aiit.ac.jp/point/pdf/201204-2-1_c.pdf', target: '_blank'} 第2期一般入試募集要項
     %h3
       %a{:href => "#"} 出願までの流れ
     %div
@@ -103,8 +106,4 @@
         %dd
           %a{href: 'http://aiit.ac.jp/guide/meeting.html', target: '_blank'} 大学院説明会
           を開催しています。教員や現役の学生から生のお話が聞けるチャンスですので、ぜひご参加下さい。
-    %h3
-      %a{:href => "#"} Googleカレンダー
-    %div
-      %iframe{:frameborder => "0", :height => "250", :scrolling => "no", :src => "https://www.google.com/calendar/embed?showTitle=0&mode=AGENDA&src=nfhlajafmvgcd7kuppr94ib02o%40group.calendar.google.com&ctz=Asia/Tokyo", :style => "border: 0", :width => "450"}
-      %p.small 上の「＋Googleカレンダー」をクリックすると、あなたのGoogleカレンダーにAIITの入試日程が表示されます。
+    =render 'index/shared'
