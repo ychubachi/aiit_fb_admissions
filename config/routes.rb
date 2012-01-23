@@ -1,5 +1,10 @@
 AiitFbAdmissions::Application.routes.draw do
-  resource :index, :controller => "index"
+  resource :index, :controller => "index" do
+    member do
+      get 'message'
+    end
+  end
+    
   root :to => 'index#show'
 
   # The priority is based upon order of creation:
