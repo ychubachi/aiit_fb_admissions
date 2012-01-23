@@ -24,14 +24,7 @@ class IndexController < ApplicationController
 
   def create
     puts '>' * 4 + ' POST /index'
-
-    sr = parse_signed_request(request, ENV["FACEBOOK_SECRET"])
-    puts 'signed_request=' + sr.to_s
-
-    respond_to do |format|
-      format.html {render template: 'index/show', layout: 'canvas'}
-    end
-
+    show
     puts '<' * 4 + ' POST /index'
   end
 
